@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — FLUXION LABS</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <style>
+    .notfound { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; }
+    .notfound h1 { font-family: var(--font-display); font-size: clamp(4rem, 15vw, 12rem); font-weight: 800; background: linear-gradient(135deg,var(--accent),var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.05em; line-height: 1; }
+    .notfound h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; margin: 16px 0 8px; }
+    .notfound p { color: var(--text-dim); margin-bottom: 32px; }
+    .back-btn { padding: 14px 36px; background: linear-gradient(135deg,var(--accent2),var(--accent)); color:#fff; font-family: var(--font-display); font-weight: 700; border: none; border-radius: 50px; cursor: pointer; font-size: 1rem; text-decoration: none; display: inline-block; }
+  </style>
+</head>
+<body>
+<div class="page-main">
+  <div class="notfound">
+    <h1>404</h1>
+    <h2>Page not found</h2>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="./" class="back-btn">Back to Home</a>
+  </div>
+</div>
+<script src="./assets/main.js"></script>
+</body>
+</html>

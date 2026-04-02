@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile App Development — FLUXION LABS</title>
+  <meta name="description" content="Native iOS & Android app development by FLUXION LABS. Swift, Kotlin, React Native, Flutter." />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <style>
+    .page-hero {
+      padding: 160px 40px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+    .page-hero h1 span {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .page-hero p {
+      color: var(--text-dim);
+      font-size: 1.1rem;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .platform-tabs {
+      display: flex;
+      gap: 12px;
+      margin: 60px 0 0;
+      flex-wrap: wrap;
+    }
+    .platform-tab {
+      padding: 10px 24px;
+      border-radius: 50px;
+      border: 1px solid var(--border);
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .platform-tab.active,
+    .platform-tab:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(0,240,255,0.06);
+    }
+    .tech-stack {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    .tech-badge {
+      padding: 8px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--text-dim);
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+    .pricing-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .pricing-card.featured {
+      border-color: var(--accent2);
+      background: linear-gradient(135deg, rgba(123,97,255,0.05), var(--surface));
+    }
+    .pricing-card:hover { transform: translateY(-4px); }
+    .pricing-tier {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dimmer);
+      margin-bottom: 12px;
+    }
+    .pricing-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .pricing-card > p {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .pricing-features { list-style: none; }
+    .pricing-features li {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pricing-features li::before { content: '✓'; color: var(--accent); font-weight: 700; }
+    .pricing-cta {
+      display: block;
+      text-align: center;
+      margin-top: 24px;
+      padding: 12px;
+      border-radius: 50px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid var(--border);
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pricing-card.featured .pricing-cta {
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      border: none;
+      color: #fff;
+    }
+    .pricing-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+    @media (max-width: 768px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-main">
+
+  <section class="page-hero">
+    <div class="section-eyebrow reveal">Mobile Development</div>
+    <h1 class="reveal">iOS & Android Apps<br>Built to <span>Perform</span></h1>
+    <p class="reveal">We engineer native and cross-platform mobile applications that users love — from fintech and healthtech to entertainment and e-commerce.</p>
+    <div class="platform-tabs reveal">
+      <div class="platform-tab active">iOS (Swift)</div>
+      <div class="platform-tab">Android (Kotlin)</div>
+      <div class="platform-tab">React Native</div>
+      <div class="platform-tab">Flutter</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CAPABILITIES -->
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Capabilities</div>
+      <h2 class="section-title">Everything Your App Needs</h2>
+      <p class="section-desc">We cover the full stack — from complex backend integrations to silky-smooth animations.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <div class="card-icon">🍎</div>
+        <h3>iOS Development</h3>
+        <p>SwiftUI & UIKit applications built for the latest iPhone and iPad hardware. App Store certified from launch.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🤖</div>
+        <h3>Android Development</h3>
+        <p>Jetpack Compose and XML-based UIs targeting Android 7+ with robust device fragmentation handling.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🔗</div>
+        <h3>API & Backend Integration</h3>
+        <p>REST, GraphQL, WebSocket and real-time sync. We integrate with any third-party system or custom backend.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">💳</div>
+        <h3>Payments & Subscriptions</h3>
+        <p>In-app purchases, subscriptions, Stripe, Braintree — secure and App Store / Play Store compliant billing flows.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- TECH STACK -->
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Technology</div>
+      <h2 class="section-title">Our Tech Stack</h2>
+      <p class="section-desc">We choose technologies for stability, performance and long-term maintainability — not hype.</p>
+    </div>
+    <div class="tech-stack reveal">
+      <span class="tech-badge">Swift 5.9</span>
+      <span class="tech-badge">SwiftUI</span>
+      <span class="tech-badge">Kotlin</span>
+      <span class="tech-badge">Jetpack Compose</span>
+      <span class="tech-badge">React Native 0.73</span>
+      <span class="tech-badge">Flutter 3</span>
+      <span class="tech-badge">Firebase</span>
+      <span class="tech-badge">GraphQL</span>
+      <span class="tech-badge">WebRTC</span>
+      <span class="tech-badge">CoreML / TFLite</span>
+      <span class="tech-badge">StoreKit 2</span>
+      <span class="tech-badge">XCTest / JUnit</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PRICING -->
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Investment</div>
+      <h2 class="section-title">Transparent Pricing</h2>
+      <p class="section-desc">No hidden fees. Fixed-price milestones with full visibility into what you're paying for.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-tier">Starter</div>
+        <h3>MVP</h3>
+        <p>Perfect for validating your idea quickly with core functionality and a clean design.</p>
+        <ul class="pricing-features">
+          <li>Single platform (iOS or Android)</li>
+          <li>Up to 10 screens</li>
+          <li>REST API integration</li>
+          <li>Basic analytics setup</li>
+          <li>Store submission</li>
+        </ul>
+        <div class="pricing-cta" onclick="openModal()">Request Quote</div>
+      </div>
+      <div class="pricing-card featured reveal">
+        <div class="pricing-tier">Most Popular</div>
+        <h3>Full Product</h3>
+        <p>Production-ready cross-platform app with advanced features and full design system.</p>
+        <ul class="pricing-features">
+          <li>iOS & Android</li>
+          <li>Unlimited screens</li>
+          <li>Custom backend / BaaS</li>
+          <li>Push notifications & deep linking</li>
+          <li>Payments integration</li>
+          <li>Advanced analytics</li>
+        </ul>
+        <div class="pricing-cta" onclick="openModal()">Start Project</div>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-tier">Enterprise</div>
+        <h3>Scale</h3>
+        <p>Mission-critical applications with dedicated team, security audits and SLA support.</p>
+        <ul class="pricing-features">
+          <li>Dedicated team</li>
+          <li>Custom architecture</li>
+          <li>Security audit</li>
+          <li>CI/CD pipeline setup</li>
+          <li>12-month SLA support</li>
+          <li>White-label option</li>
+        </ul>
+        <div class="pricing-cta" onclick="openModal()">Talk to Us</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center; padding-top:40px; padding-bottom:120px;">
+    <div class="reveal">
+      <h2 class="section-title">Have a Project in Mind?</h2>
+      <p class="section-desc" style="margin: 0 auto 32px;">Let's turn your idea into a live, loved application.</p>
+      <button class="btn-primary" onclick="openModal()" style="padding:14px 40px;background:linear-gradient(135deg,var(--accent2),var(--accent));color:#fff;font-family:var(--font-display);font-weight:700;font-size:1rem;border:none;border-radius:50px;cursor:pointer;">Start a Conversation</button>
+    </div>
+  </section>
+
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

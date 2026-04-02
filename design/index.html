@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Design — FLUXION LABS</title>
+  <meta name="description" content="UI/UX design for mobile and TV applications. Figma prototypes, design systems and motion design by FLUXION LABS." />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <style>
+    .page-hero { padding: 160px 40px 80px; max-width: 1200px; margin: 0 auto; }
+    .page-hero h1 { font-family:var(--font-display); font-size:clamp(2.5rem,6vw,5rem); font-weight:800; letter-spacing:-0.04em; line-height:1.05; max-width:700px; margin-bottom:24px; }
+    .page-hero h1 span { background:linear-gradient(90deg,var(--accent2),var(--accent3)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .page-hero p { color:var(--text-dim); font-size:1.1rem; max-width:560px; line-height:1.7; }
+    .design-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 60px;
+    }
+    .showcase-tile {
+      background: var(--surface);
+      padding: 48px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .showcase-tile.tall { grid-row: span 2; }
+    .showcase-tile h3 { font-family:var(--font-display); font-weight:800; font-size:1.4rem; margin-bottom:10px; }
+    .showcase-tile p { font-size:0.9rem; color:var(--text-dim); line-height:1.65; max-width:340px; }
+    .tile-num {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 800;
+      color: var(--border);
+      position: absolute;
+      bottom: -10px; right: 20px;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .color-swatch {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+    }
+    .swatch {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+    }
+    @media(max-width:768px){ .design-showcase{grid-template-columns:1fr;} .showcase-tile.tall{grid-row:span 1;} }
+  </style>
+</head>
+<body>
+<div class="page-main">
+
+  <section class="page-hero">
+    <div class="section-eyebrow reveal">Design</div>
+    <h1 class="reveal">Design That<br>Users <span>Remember</span></h1>
+    <p class="reveal">Beautiful is not enough — our design process creates interfaces that are intuitive, brand-coherent and conversion-optimised.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Deliverables</div>
+      <h2 class="section-title">What We Create</h2>
+    </div>
+    <div class="design-showcase reveal">
+      <div class="showcase-tile tall">
+        <h3>Design System</h3>
+        <p>Atomic component libraries in Figma — tokens, typography scales, colour palettes and spacing grids that keep your product consistent at any scale.</p>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#00f0ff"></div>
+          <div class="swatch" style="background:#7b61ff"></div>
+          <div class="swatch" style="background:#ff3cac"></div>
+          <div class="swatch" style="background:#e8e8f0"></div>
+          <div class="swatch" style="background:#3a3a5a"></div>
+        </div>
+        <div class="tile-num">01</div>
+      </div>
+      <div class="showcase-tile">
+        <h3>UX Research & Wireframes</h3>
+        <p>User interviews, journey mapping and low-fidelity wireframes that validate architecture before a single pixel is polished.</p>
+        <div class="tile-num">02</div>
+      </div>
+      <div class="showcase-tile">
+        <h3>High-Fidelity Prototypes</h3>
+        <p>Clickable Figma prototypes with real interactions — indistinguishable from the finished app for client sign-off and investor demos.</p>
+        <div class="tile-num">03</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Disciplines</div>
+      <h2 class="section-title">Our Design Practice</h2>
+      <p class="section-desc">Every discipline needed to ship a visually excellent, commercially successful product — under one roof.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <div class="card-icon">📐</div>
+        <h3>UX Architecture</h3>
+        <p>Information architecture, user flows and navigation patterns engineered for lowest possible friction and highest conversion.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">✨</div>
+        <h3>Visual Design</h3>
+        <p>Colour theory, typography, iconography and illustration — every visual decision is deliberate and on-brand.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🎬</div>
+        <h3>Motion Design</h3>
+        <p>Micro-animations, transition choreography and Lottie exports that make your app feel alive and premium.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">♿</div>
+        <h3>Accessibility</h3>
+        <p>WCAG AA compliance, dynamic type support, VoiceOver & TalkBack labelling — inclusive design for every user.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Tools</div>
+      <h2 class="section-title">Our Design Toolkit</h2>
+      <p class="section-desc">Industry-standard tools that ensure seamless handoff and long-term maintainability.</p>
+    </div>
+    <div class="cards-grid reveal">
+      <div class="card">
+        <div class="card-icon">🖌️</div>
+        <h3>Figma & FigJam</h3>
+        <p>All UI work, design tokens, interactive prototypes and collaborative workshops in Figma.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎞️</div>
+        <h3>After Effects & Lottie</h3>
+        <p>Complex motion sequences exported as lightweight JSON animations for seamless in-app rendering.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔬</div>
+        <h3>Maze & Hotjar</h3>
+        <p>Unmoderated usability testing, heatmaps and session recordings to validate design decisions with data.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h3>Zeroheight</h3>
+        <p>Living design documentation that keeps design and engineering aligned throughout the project lifecycle.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center;padding-top:40px;padding-bottom:120px">
+    <div class="reveal">
+      <h2 class="section-title">Let's Design Something Extraordinary</h2>
+      <p class="section-desc" style="margin:0 auto 32px">Share your brand and vision — we'll turn it into a product your users can't put down.</p>
+      <button onclick="openModal()" style="padding:14px 40px;background:linear-gradient(135deg,var(--accent2),var(--accent3));color:#fff;font-family:var(--font-display);font-weight:700;font-size:1rem;border:none;border-radius:50px;cursor:pointer">Get a Design Quote</button>
+    </div>
+  </section>
+
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

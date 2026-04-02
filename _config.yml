@@ -1,0 +1,3 @@
+# Disables Jekyll — serves raw HTML files as-is
+# This ensures folder-based URLs work correctly (e.g. /mobile/ → /mobile/index.html)
+plugins: []

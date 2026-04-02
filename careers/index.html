@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers — FLUXION LABS</title>
+  <meta name="description" content="Join FLUXION LABS. Open positions in mobile development, design and ASO." />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <style>
+    .page-hero { padding: 160px 40px 80px; max-width: 1200px; margin: 0 auto; }
+    .page-hero h1 { font-family:var(--font-display); font-size:clamp(2.5rem,6vw,5rem); font-weight:800; letter-spacing:-0.04em; line-height:1.05; max-width:700px; margin-bottom:24px; }
+    .page-hero h1 span { background:linear-gradient(90deg,var(--accent2),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .page-hero p { color:var(--text-dim); font-size:1.1rem; max-width:560px; line-height:1.7; }
+    .jobs-list { margin-top: 60px; display: flex; flex-direction: column; gap: 16px; }
+    .job-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      transition: border-color 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
+    .job-card:hover { border-color: rgba(0,240,255,0.25); transform: translateX(4px); }
+    .job-info h3 { font-family:var(--font-display); font-weight:700; font-size:1.1rem; margin-bottom:8px; }
+    .job-meta { display:flex; gap:12px; flex-wrap:wrap; }
+    .job-tag { padding:4px 12px; border-radius:50px; font-size:0.75rem; font-family:var(--font-display); font-weight:600; }
+    .tag-dept { background:rgba(123,97,255,0.12); color:var(--accent2); }
+    .tag-type { background:rgba(0,240,255,0.08); color:var(--accent); }
+    .tag-loc  { background:rgba(255,255,255,0.05); color:var(--text-dim); }
+    .job-arrow { color:var(--text-dimmer); font-size:1.3rem; flex-shrink:0; transition:color 0.2s; }
+    .job-card:hover .job-arrow { color:var(--accent); }
+    .perks-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); border-radius:20px; overflow:hidden; margin-top:60px; }
+    .perk-tile { background:var(--surface); padding:32px; }
+    .perk-icon { font-size:2rem; margin-bottom:12px; }
+    .perk-tile h3 { font-family:var(--font-display); font-weight:700; font-size:0.95rem; margin-bottom:8px; }
+    .perk-tile p { font-size:0.85rem; color:var(--text-dim); line-height:1.6; }
+    @media(max-width:768px){ .perks-grid{grid-template-columns:1fr;} .job-card{flex-direction:column; align-items:flex-start;} }
+  </style>
+</head>
+<body>
+<div class="page-main">
+
+  <section class="page-hero">
+    <div class="section-eyebrow reveal">Careers</div>
+    <h1 class="reveal">Build the Future<br>of <span>Apps</span> With Us</h1>
+    <p class="reveal">We're a remote-first team of app obsessives. If you care deeply about craft, ship fast and communicate well — you'll love it here.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Culture</div>
+      <h2 class="section-title">Life at FLUXION LABS</h2>
+      <p class="section-desc">Autonomy, ownership and impact — the principles that shape how we work every day.</p>
+    </div>
+    <div class="perks-grid reveal">
+      <div class="perk-tile">
+        <div class="perk-icon">🌍</div>
+        <h3>Fully Remote</h3>
+        <p>Work from anywhere. Async-first culture with two optional team syncs per week across time zones.</p>
+      </div>
+      <div class="perk-tile">
+        <div class="perk-icon">📈</div>
+        <h3>Equity & Growth</h3>
+        <p>Competitive salary, meaningful equity and a personal learning budget of £1,500 per year for courses and conferences.</p>
+      </div>
+      <div class="perk-tile">
+        <div class="perk-icon">🚢</div>
+        <h3>Ship Real Products</h3>
+        <p>No endless roadmap meetings. We go from idea to production in weeks and every team member sees their work in the wild.</p>
+      </div>
+      <div class="perk-tile">
+        <div class="perk-icon">🧠</div>
+        <h3>Smart Team</h3>
+        <p>Work alongside experienced engineers and designers who take quality seriously and love to share knowledge.</p>
+      </div>
+      <div class="perk-tile">
+        <div class="perk-icon">⚖️</div>
+        <h3>Work-Life Balance</h3>
+        <p>Unlimited PTO, no weekend pings and flexible hours. We measure output, not hours at a desk.</p>
+      </div>
+      <div class="perk-tile">
+        <div class="perk-icon">🛠️</div>
+        <h3>Best-in-Class Tools</h3>
+        <p>Latest MacBook, Figma Pro, JetBrains toolbox, GitHub Copilot — we invest in tooling that makes you faster.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Open Roles</div>
+      <h2 class="section-title">We're Hiring</h2>
+      <p class="section-desc">Don't see the perfect role? Send an open application to <a href="mailto:info@fluxionapps.com" style="color:var(--accent)">info@fluxionapps.com</a></p>
+    </div>
+    <div class="jobs-list reveal">
+      <div class="job-card" onclick="openModal()">
+        <div class="job-info">
+          <h3>Senior iOS Engineer</h3>
+          <div class="job-meta">
+            <span class="job-tag tag-dept">Engineering</span>
+            <span class="job-tag tag-type">Full-time</span>
+            <span class="job-tag tag-loc">Remote</span>
+          </div>
+        </div>
+        <div class="job-arrow">→</div>
+      </div>
+      <div class="job-card" onclick="openModal()">
+        <div class="job-info">
+          <h3>Android Developer (Jetpack Compose)</h3>
+          <div class="job-meta">
+            <span class="job-tag tag-dept">Engineering</span>
+            <span class="job-tag tag-type">Full-time</span>
+            <span class="job-tag tag-loc">Remote</span>
+          </div>
+        </div>
+        <div class="job-arrow">→</div>
+      </div>
+      <div class="job-card" onclick="openModal()">
+        <div class="job-info">
+          <h3>Lead Product Designer</h3>
+          <div class="job-meta">
+            <span class="job-tag tag-dept">Design</span>
+            <span class="job-tag tag-type">Full-time</span>
+            <span class="job-tag tag-loc">Remote</span>
+          </div>
+        </div>
+        <div class="job-arrow">→</div>
+      </div>
+      <div class="job-card" onclick="openModal()">
+        <div class="job-info">
+          <h3>ASO Specialist</h3>
+          <div class="job-meta">
+            <span class="job-tag tag-dept">Growth</span>
+            <span class="job-tag tag-type">Full-time</span>
+            <span class="job-tag tag-loc">Remote</span>
+          </div>
+        </div>
+        <div class="job-arrow">→</div>
+      </div>
+      <div class="job-card" onclick="openModal()">
+        <div class="job-info">
+          <h3>tvOS / Android TV Developer</h3>
+          <div class="job-meta">
+            <span class="job-tag tag-dept">Engineering</span>
+            <span class="job-tag tag-type">Contract</span>
+            <span class="job-tag tag-loc">Remote</span>
+          </div>
+        </div>
+        <div class="job-arrow">→</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">Values</div>
+      <h2 class="section-title">What We Believe</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <div class="card-icon">🏆</div>
+        <h3>Craft Over Speed</h3>
+        <p>We'd rather take an extra day to ship something excellent than rush something mediocre. Quality is non-negotiable.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🗣️</div>
+        <h3>Radical Candour</h3>
+        <p>We give direct, kind feedback. No politics, no passive aggression — honest communication is the fastest path forward.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🤝</div>
+        <h3>Client Obsession</h3>
+        <p>We treat every client's app like it's our own. Their users' satisfaction is our primary success metric.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🔬</div>
+        <h3>Always Learning</h3>
+        <p>The mobile industry moves fast. Curiosity and continuous learning aren't optional — they're expected and rewarded.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>

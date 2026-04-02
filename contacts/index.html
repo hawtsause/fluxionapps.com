@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts — FLUXION LABS</title>
+  <meta name="description" content="Contact FLUXION LABS for app development, design and ASO services." />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <style>
+    .page-hero { padding: 160px 40px 80px; max-width: 1200px; margin: 0 auto; }
+    .page-hero h1 { font-family:var(--font-display); font-size:clamp(2.5rem,6vw,5rem); font-weight:800; letter-spacing:-0.04em; line-height:1.05; max-width:700px; margin-bottom:24px; }
+    .page-hero h1 span { background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info h2 { font-family:var(--font-display); font-size:1.8rem; font-weight:800; margin-bottom:16px; }
+    .contact-info p { color:var(--text-dim); font-size:1rem; line-height:1.7; margin-bottom:32px; }
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-detail:last-child { border-bottom: none; }
+    .contact-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-detail-text p:first-child { font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; font-family:var(--font-display); font-weight:600; color:var(--text-dimmer); margin-bottom:2px; }
+    .contact-detail-text p:last-child { font-size:0.95rem; color:var(--text); }
+    .contact-form-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 44px;
+    }
+    .contact-form-card h3 { font-family:var(--font-display); font-size:1.4rem; font-weight:800; margin-bottom:8px; }
+    .contact-form-card > p { color:var(--text-dim); font-size:0.9rem; margin-bottom:28px; }
+    @media(max-width:900px){ .contact-layout{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<div class="page-main">
+
+  <section class="page-hero">
+    <div class="section-eyebrow reveal">Contact</div>
+    <h1 class="reveal">Let's <span>Talk</span></h1>
+    <p style="color:var(--text-dim);font-size:1.1rem;max-width:560px;line-height:1.7" class="reveal">Whether you have a fully formed brief or just a rough idea — reach out. We respond to every enquiry within one business day.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="contact-layout">
+      <div class="reveal">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>We work with startups, scale-ups and enterprise teams. No project is too small or too complex — we'll find the right approach for your situation.</p>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-detail-text">
+            <p>Email</p>
+            <p><a href="mailto:info@fluxionapps.com" style="color:var(--accent)">info@fluxionapps.com</a></p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div class="contact-detail-text">
+            <p>Address</p>
+            <p>6 Gerrards Gardens, HYDE, SK14 5SH, UK</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">⏰</div>
+          <div class="contact-detail-text">
+            <p>Response Time</p>
+            <p>Within 1 business day</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🌍</div>
+          <div class="contact-detail-text">
+            <p>Working Hours</p>
+            <p>Mon – Fri, 9:00 – 18:00 GMT</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal">
+        <h3>Send Us a Message</h3>
+        <p>Tell us about your project and we'll get back to you with a tailored proposal.</p>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Smith" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@company.com" />
+        </div>
+        <div class="form-group">
+          <label>Project Type</label>
+          <input type="text" placeholder="e.g. iOS App, TV App, ASO..." />
+        </div>
+        <div class="form-group">
+          <label>Tell Us About Your Project</label>
+          <textarea placeholder="Share any context, timeline or budget constraints..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="this.textContent='Sent! ✓';this.style.background='linear-gradient(135deg,#00b894,#00cec9)'">Send Message</button>
+        <p class="modal-note" style="margin-top:14px">By submitting you agree to data processing per our <a href="../policy/">Privacy Policy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="reveal">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title">Common Questions</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <h3>How long does an app take to build?</h3>
+        <p>An MVP typically takes 8–14 weeks. A full-featured product is 4–6 months. We'll give you an accurate estimate after the discovery phase.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Do you work with early-stage startups?</h3>
+        <p>Absolutely. We love working with founders to validate ideas fast. Our MVP track is designed specifically for pre-seed and seed-stage teams.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Can you take over an existing app?</h3>
+        <p>Yes. We conduct a technical audit first, then provide a clear roadmap for improvements, refactoring or feature additions.</p>
+      </div>
+      <div class="card reveal">
+        <h3>What's included in post-launch support?</h3>
+        <p>All projects include 30 days of bug-fix support. Ongoing SLA retainers covering updates, monitoring and new features are available.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>
